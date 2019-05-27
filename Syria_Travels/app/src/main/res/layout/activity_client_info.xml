@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.farid.project_test.client_info"
+    android:background="@drawable/backg">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:text="please enter your info:"/>
+            <EditText
+                android:id="@+id/client_fname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="FIRST NAME" />
+
+            <EditText
+                android:id="@+id/client_lname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="LAST NAME" />
+
+            <EditText
+                android:id="@+id/client_national_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="NATIONAL NUMBER" />
+
+            <EditText
+                android:id="@+id/client_country"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="COUNTRY" />
+
+            <EditText
+                android:id="@+id/client_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="CITY" />
+
+            <EditText
+                android:id="@+id/client_phone_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="PHONE NUMBER" />
+
+
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/visa" />
+
+            <EditText
+                android:id="@+id/card_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="CARD NUMBER" />
+
+            <EditText
+                android:id="@+id/card_expire_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="EXPIRE DATE"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/card_cvv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="CARD CVV NUMBER" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/b"
+                android:text="submit"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btnbg33"
+                android:onClick="submit_info_func"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

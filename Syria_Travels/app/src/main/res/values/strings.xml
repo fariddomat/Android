@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Syria Travels</string>
+    <string name="welcome_string">,, WELCOME TO</string>
+    <string name="signing_string">SYRIA TRAVEL</string>
+    <string name="username_hint_string">Username</string>
+    <string name="password_hint_string">password</string>
+    <string name="singing_btn_string">LOGIN</string>
+    <string name="register_btn_string">REGISTER</string>
+    <string name="desi_by_string">DESIGNED For Testing Purpose</string>
+    <string name="title_activity_as">Sign in</string>
+
+
+    <string name="title_activity_search">search</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="sp1">
+        <item>Economy</item>
+        <item>First-Class</item>
+    </string-array>
+    <string name="title_activity_client_view_reservation">Client_view_reservation</string>
+    <string name="fav">fav</string>
+    <string name="err_name">name must have characters only</string>
+    <string name="err_email">not valid email</string>
+    <string name="err_password">password have caracters that are not allowed</string>
+    <string name="adulrnum">number must be 1-5</string>
+    <string name="childnum">number between 0-5</string>
+    <string name="err_phone">wrong phone number</string>
+    <string name="err_num">wrong number or not vaild input</string>
+    <string name="err_cvv">cvv must have onle 3 number example: 123</string>
+    <string name="err_password_confirmation">password not match</string>
+    <string name="err_string">filed must have characters only</string>
+    <string name="err_uname">username can\'t have number or space</string>
+</resources>

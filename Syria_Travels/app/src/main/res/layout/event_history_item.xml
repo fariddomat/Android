@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+    <ImageView
+        android:id="@+id/not_icon"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/user_ic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/not_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="username"
+        android:layout_above="@+id/not_date"
+        android:layout_toRightOf="@+id/not_icon"
+        android:layout_toEndOf="@+id/not_icon"
+        android:layout_marginBottom="9dp" />
+
+    <TextView
+        android:id="@+id/ehi_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="event action"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/not_company_name"
+        android:layout_alignStart="@+id/not_company_name"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/not_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/not_icon"
+        android:layout_alignLeft="@+id/not_company_name"
+        android:layout_alignStart="@+id/not_company_name" />
+
+    <TextView
+        android:id="@+id/not_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="time"
+        android:layout_above="@+id/not_details"
+        android:layout_toRightOf="@+id/not_date"
+        android:layout_toEndOf="@+id/not_date"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <TextView
+        android:id="@+id/not_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="25dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:text="ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+        android:layout_below="@+id/not_date"
+        android:layout_alignLeft="@+id/not_icon"
+        android:layout_alignStart="@+id/not_icon" />
+
+</RelativeLayout>

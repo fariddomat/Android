@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.farid.project_test.employee_control_panel"
+    android:orientation="vertical"
+    android:background="@drawable/backg">
+
+    <Button
+        android:id="@+id/show_hold_request"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Show hold requests"
+        android:onClick="show_hold_requests"
+        android:background="@drawable/btn_bg"/>
+    <Button
+        android:id="@+id/show_confirmed_request"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Show confirmed requests"
+        android:onClick="show_confirmed_requests"
+        android:background="@drawable/btnbg3"/>
+
+    <Button
+        android:id="@+id/show_refused_request"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Show refused requests"
+        android:onClick="show_refused_requests"
+        android:background="@drawable/btnbg2"/>
+    <Button
+        android:id="@+id/show_cancel_request"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Show cancel requests"
+        android:onClick="show_cancel_requests"
+        android:background="@drawable/ed_bg"/>
+</LinearLayout>

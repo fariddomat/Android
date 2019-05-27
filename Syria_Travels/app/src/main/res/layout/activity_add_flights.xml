@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:gravity="center_vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:id="@+id/round_add"
+    tools:context="net.farid.project_test.Add_flights"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/f_from"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:hint="from" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/f_to"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ffff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+
+                    android:focusableInTouchMode="false"
+                    android:hint="to" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/calander_ico" />
+
+                    <EditText
+                        android:id="@+id/depDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="departure date" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/clock" />
+
+                    <EditText
+                        android:id="@+id/depTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="departure time" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/calander_ico" />
+
+                    <EditText
+                        android:id="@+id/arrDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+
+                        android:hint="arrival date" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/clock" />
+
+                    <EditText
+                        android:id="@+id/arrTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="arrival time" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/durationicon" />
+
+                <EditText
+                    android:id="@+id/f_duration"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="duration" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/chair" />
+
+                    <EditText
+                        android:id="@+id/f_econ_sets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="economic set"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/chair" />
+
+                    <EditText
+                        android:id="@+id/f_first_sets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="first class set"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/dollar" />
+
+                <EditText
+                    android:id="@+id/f_eprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="economy class price"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/dollar" />
+
+                <EditText
+                    android:id="@+id/f_fprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="first class price"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/dollar" />
+
+                <EditText
+                    android:id="@+id/f_childprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="children price"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/f_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="status"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/packageicon" />
+
+                <EditText
+                    android:id="@+id/f_total_weight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="total weight"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/dollar" />
+
+                <EditText
+                    android:id="@+id/f_extraWeightprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="extra weight price"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/newFlight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/btnbg33"
+                    android:onClick="addFlights"
+                    android:text="add new trip"
+                    android:textColor="#ff000000"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

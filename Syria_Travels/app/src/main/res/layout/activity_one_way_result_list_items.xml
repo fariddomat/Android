@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_view_selected"
+    tools:context="net.farid.project_test.one_way_result_list_items">
+    <ImageView
+        android:id="@+id/ivOneWay"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/user_ic"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/one_way_dep_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="departure time"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivOneWay"
+        android:layout_toEndOf="@+id/ivOneWay" />
+
+    <TextView
+        android:id="@+id/one_way_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="duration"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_below="@+id/one_way_dep_date"
+        android:layout_alignLeft="@+id/one_way_dep_date"
+        android:layout_alignStart="@+id/one_way_dep_date" />
+
+    <TextView
+        android:id="@+id/one_way_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="company_name"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/ivOneWay"
+        android:layout_alignLeft="@+id/ivOneWay"
+        android:layout_alignStart="@+id/ivOneWay" />
+
+    <TextView
+        android:id="@+id/one_way_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="price"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_alignBottom="@+id/one_way_company_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

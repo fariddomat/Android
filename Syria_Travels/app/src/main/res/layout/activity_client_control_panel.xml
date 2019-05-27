@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.farid.project_test.Client_control_panel"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/backg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to your control panel .\nhere you can manage your trips and profile ."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0000ff"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                />
+            <Button
+                android:id="@+id/client_browsing"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:background="@drawable/ed_bg"
+                android:onClick="client_browsingFunc"
+                android:text="Browsing Trip" />
+
+    <Button
+        android:id="@+id/client_view_reservation"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="48dp"
+        android:text="View Reservation"
+        android:background="@drawable/btnbg3"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="client_view_reservationFunc"/>
+    <Button
+        android:id="@+id/client_manage_profile"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="48dp"
+        android:text="manage profile"
+        android:background="@drawable/btn_bg"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="client_manage_profileFunc"/>
+            <LinearLayout
+                android:id="@+id/layout_clinet_manage_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:visibility="visible">
+                <EditText
+                    android:id="@+id/client_uname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="user name"
+                    android:textColor="#ffffffff" />
+
+                <EditText
+                    android:id="@+id/client_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffffff" />
+
+                <EditText
+                    android:id="@+id/client_pass2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="confirm password"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffffff" />
+
+                <Button
+                    android:id="@+id/update_client_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="update"
+                    android:onClick="update_clientFunc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

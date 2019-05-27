@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.farid.project_test.flight_details">
+
+    <ScrollView android:id="@+id/hgh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/backg"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:paddingTop="10dp"
+                android:text="Trip Details"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ScrollView android:id="@+id/hh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/backg">
+                <LinearLayout android:id="@+id/gfg" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/f_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="TRIP TYPE :"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+                        <TextView android:id="@+id/fd_type" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/de" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FROM :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb0400ff" />
+                        <TextView android:id="@+id/fd_from" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/tr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TO :"
+                            android:textSize="20dp"
+                            android:textColor="#bb000cff"
+                            android:layout_marginLeft="10dp" />
+                        <TextView android:id="@+id/fd_to" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/se" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SEATS :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/fd_set" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/sec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Child SEATS :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/fd_child_num" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp">
+                    <TextView android:id="@+id/d_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DEPART DATE :"
+                        android:textSize="20dp"
+                        android:textColor="#bb000cff"
+                        android:layout_marginLeft="10dp" />
+                    <TextView android:id="@+id/fd_depart_date" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/d_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DEPART TIME :"
+                            android:textSize="20dp"
+                            android:textColor="#bb000cff"
+                            android:layout_marginLeft="10dp" />
+                        <TextView android:id="@+id/fd_depart_time" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/drt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DURATION :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/fd_duration" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/pri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PRICE :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/fd_price" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/child_l"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:orientation="horizontal"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp">
+                            <TextView android:id="@+id/prich" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHILD PRICE :"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#bb000cff" />
+                            <TextView android:id="@+id/fd_child_price" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="10dp" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/weightfff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="weight available :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/weight_dep" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <CheckBox
+                            android:id="@+id/check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="extra weight" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/extra1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/extra_price"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$   per 1 kg"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="extra weight value"
+                            android:id="@+id/extraValue1"
+                            android:inputType="number"/>
+                    </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/return_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/d_d2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="RETURN DATE :"
+                                android:textColor="#bb000cff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/fd_return_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/d_t2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="RETURN TIME :"
+                                android:textColor="#bb000cff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/fd_return_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/drt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="DURATION :"
+                                android:textColor="#bb000cff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/fd_duration2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/prir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="PRICE :"
+                                android:textColor="#bb000cff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/fd_price2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/child_lr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/prichr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="CHILD PRICE :"
+                                    android:textColor="#bb000cff"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:id="@+id/fd_child_price2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/weightff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="weight available :"
+                                android:textColor="#bb000cff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/weight_ret"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/check2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="extra weight" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/extra2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/extra_price2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$   per 1 kg" />
+
+                                <EditText
+                                    android:id="@+id/extraValue2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="extra weight value" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="TOTAL VALUE :"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+
+                        <TextView android:id="@+id/fd_total_val" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/b7"
+                android:text="continuo"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:background="@drawable/btnbg33"
+                android:layout_below="@+id/hgh"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="enter_info_func"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

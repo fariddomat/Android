@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.farid.project_test.round_result_list"
+
+    android:background="@drawable/backg"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_above="@+id/round_book"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="departure trips"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:background="@drawable/backg"/>
+
+            <ListView
+                android:id="@+id/round1_list"
+                android:layout_width="fill_parent"
+                android:layout_height="525dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:paddingRight="1dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="return trips"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:background="@drawable/backg"/>
+
+            <ListView
+                android:id="@+id/round2_list"
+                android:layout_width="fill_parent"
+                android:layout_height="526dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:paddingLeft="1dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/round_book"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btnbg33"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Book now"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="book_round_func"/>
+</RelativeLayout>

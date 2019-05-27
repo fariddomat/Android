@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+
+
+        <ImageView
+            android:id="@+id/c_v_l_imageView"
+            android:layout_width="109dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:src="@drawable/onway"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_below="@+id/flight_list_id"
+            android:layout_toRightOf="@+id/flight_list_from"
+            android:layout_toEndOf="@+id/flight_list_from" />
+
+    <TextView
+            android:id="@+id/flight_list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+        android:layout_weight="5"
+            android:text="flight id "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/c_v_l_imageView"
+        android:layout_alignStart="@+id/c_v_l_imageView"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:text="from :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="64dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/flight_list_from"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignBaseline="@+id/flight_list_to"
+        android:layout_alignBottom="@+id/flight_list_to"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/flight_list_to"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_weight="5"
+        android:text="to "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="64dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@+id/c_v_l_imageView"
+        android:layout_toRightOf="@+id/c_v_l_imageView"
+        android:layout_toEndOf="@+id/c_v_l_imageView"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:text="date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="109dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/flight_list_date"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/c_v_l_imageView"
+        android:layout_alignLeft="@+id/flight_list_from"
+        android:layout_alignStart="@+id/flight_list_from" />
+
+    <TextView
+        android:id="@+id/flight_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_weight="5"
+        android:text="Time "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="109dp"
+        android:layout_below="@+id/c_v_l_imageView"
+        android:layout_toRightOf="@+id/flight_list_date" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="duration"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="109dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/flight_list_time"
+        android:layout_alignBottom="@+id/flight_list_time"
+        android:layout_toRightOf="@+id/flight_list_time"
+        android:layout_toEndOf="@+id/flight_list_time" />
+
+    <TextView
+        android:id="@+id/flight_list_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="duration"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="109dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_below="@+id/c_v_l_imageView"
+        android:layout_toRightOf="@+id/textView15" />
+
+
+
+</RelativeLayout>

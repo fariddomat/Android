@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.farid.project_test.hold_clients_requests_popup">
+
+    <ScrollView android:id="@+id/hgh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/backg"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Reservation Details"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ScrollView android:id="@+id/hh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/backg">
+                <LinearLayout android:id="@+id/gfg" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/cliant_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Name:"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/fn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:visibility="visible" />
+                        <TextView
+                            android:id="@+id/ln"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/client_national"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="National number :"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/nn"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/country_client"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Country : "
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/countryclient"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/c_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Phone :"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/phonec"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/c_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Status :"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/statusc"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:id="@+id/c_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Type :"
+                            android:textColor="#bb000cff"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/typec"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/sec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SEATS :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/setAdult" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                        <TextView android:id="@+id/sec2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Childs :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/setChild" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/seatAv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seats available :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/seatsAvailable" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="card_number:"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/card_num" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/expire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="expire date :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/expire_date" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp">
+                        <TextView android:id="@+id/cardS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="card svv :"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#bb000cff" />
+                        <TextView android:id="@+id/card_svv" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/confirm_client_requests "
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/hgh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btnbg33"
+                android:onClick="confirmClientRequests"
+                android:text="Confirm"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/refuse_reason"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="please give a reason to refuse"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/refuse_client_requests "
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/hgh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btnbg33"
+                android:onClick="refuseClientRequests"
+                android:text="Refuse"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

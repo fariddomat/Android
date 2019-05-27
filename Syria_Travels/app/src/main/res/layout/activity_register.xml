@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.farid.project_test.register"
+    android:background="@drawable/backg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <EditText
+
+                android:layout_height="40dp"
+                android:id="@+id/uname"
+                android:layout_marginTop="40dp"
+                android:hint="user name"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:textSize="25sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:hint="email"
+                android:background="#ffffff"
+                android:ems="10"
+                android:layout_marginTop="40dp"
+                android:id="@+id/u_email"
+                android:textSize="25sp"
+                android:paddingLeft="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:background="#ffffff"
+                android:ems="10"
+                android:layout_marginTop="40dp"
+                android:id="@+id/u_pass"
+                android:textSize="25sp"
+                android:paddingLeft="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="confirm password"
+                android:background="#ffffff"
+                android:ems="10"
+                android:layout_marginTop="40dp"
+                android:id="@+id/u_pass_confirm"
+                android:textSize="25sp"
+                android:paddingLeft="15dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/u_register"
+                android:text="@string/register_btn_string"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_bg"
+                android:layout_margin="30dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="registerFunc"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

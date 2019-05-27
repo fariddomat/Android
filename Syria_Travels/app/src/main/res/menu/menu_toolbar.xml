@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+        <!-- "Mark Favorite", should appear as action button if possible -->
+        <item android:title="home"
+            android:id="@+id/action_home"
+            android:icon="@drawable/home"
+            app:showAsAction="always"/>
+    <item android:title="notification"
+        android:id="@+id/action_notify"
+        android:actionLayout="@layout/notify_layout"
+        android:icon="@drawable/notify"
+        android:visible="false"
+        android:enabled="false"
+        app:showAsAction="always"/>
+        <item android:title="profile"
+            android:icon="@drawable/person"
+            app:showAsAction="always"
+            android:id="@+id/action_profile"/>
+        <item android:id="@+id/action_log_out" android:title="log out"
+            app:showAsAction="ifRoom"/>
+        <!-- Settings, should always be in the overflow -->
+        <item android:id="@+id/action_settings"
+            android:title="about"/>
+
+</menu>

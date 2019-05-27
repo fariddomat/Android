@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="You have choose a trip:" />
+
+    <TextView
+        android:id="@+id/flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="trip" />
+
+    <Button
+        android:id="@+id/arriveFlight"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnbg3"
+        android:text="arrived to destination"
+        android:textColor="#ff000000"
+        android:visibility="visible"
+        android:onClick="arrive_flight"/>
+
+    <Button
+        android:id="@+id/updateFlight"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnbg33"
+        android:text="update trip info"
+        android:textColor="#ff000000"
+        android:visibility="visible"
+        android:onClick="update_flight"/>
+
+    <Button
+        android:id="@+id/deleteFlight"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnbg2"
+        android:text="delete this trip"
+        android:textColor="#ff000000"
+        android:visibility="visible"
+        android:onClick="del_flight"/>
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/con_a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="net.farid.project_test.Manage_employee"
+    android:background="@drawable/backg">
+
+    <Button
+        android:id="@+id/viewEventHisbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnbg33"
+        android:text="view enevt"
+        android:textColor="#ff000000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp
+"
+        android:visibility="visible"
+        android:onClick="e_eh_func"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="choose employee"
+            android:textColor="#ff000000"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/employeeSpinner"
+            style="@android:style/Widget.Material.Light.Spinner"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/ggh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ser" />
+
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp">
+        <LinearLayout android:id="@+id/Linear" android:orientation="vertical" android:layout_width="320dp" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/newEbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/btnbg33"
+                android:text="add new employee"
+                android:onClick="add_employee_func"
+                android:textColor="#ff000000"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/updateEmp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#ff009688"
+                android:text="update Employee"
+                android:textColor="#ff000000"
+                android:visibility="gone"
+                android:onClick="upd_employee_func"/>
+
+            <LinearLayout
+                android:id="@+id/newEmpLinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/newEet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="employee name"
+                    android:textColor="#ffffffff" />
+
+                <EditText
+                    android:id="@+id/newEpet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="employee pwd"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffffff" />
+
+                <EditText
+                    android:id="@+id/newEcpet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="confirm pwd"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffffff" />
+
+                <Button
+                    android:id="@+id/addbtnv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="add"
+                    android:onClick="manage_emp_func"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/deleteEbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btnbg2"
+                android:text="delete the employee"
+                android:textColor="#ff000000"
+                android:visibility="gone"
+                android:onClick="del_emp_func"/>
+        </LinearLayout>     </ScrollView>
+
+</LinearLayout>
