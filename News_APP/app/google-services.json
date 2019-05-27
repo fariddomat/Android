@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "657409646458",
+    "firebase_url": "https://newsapp-9c38d.firebaseio.com",
+    "project_id": "newsapp-9c38d",
+    "storage_bucket": "newsapp-9c38d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657409646458:android:060f638a4e3a68b7",
+        "android_client_info": {
+          "package_name": "com.example.farid.newser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657409646458-atgtvcae3g7ee6pricieti0mb8gakvn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsXoZUUGIR3rpOsy_VVLdehDLmkATKx0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

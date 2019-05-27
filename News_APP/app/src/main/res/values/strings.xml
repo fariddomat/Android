@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+
+    <string name="title_activity_login">NewsApp</string>
+        <string name="hello_world">Hello world!</string>
+        <string name="action_settings">Settings</string>
+        <string name="title_activity_my">myActivity</string>
+        <string name="welcome_string">,, WELCOME TO</string>
+        <string name="signing_string">NEWS\nAPP ,,</string>
+        <string name="username_hint_string">Username</string>
+        <string name="password_hint_string">password</string>
+        <string name="singing_btn_string">SIGN IN</string>
+        <string name="register_btn_string">SIGN UP</string>
+        <string name="desi_by_string">DESIGNED BY FARIDDOMAT</string>
+        <string name="error_empty_field">Cannot be empty</string>
+        <string name="error_invalid_data">Username or Password is in correct</string>
+
+        <string name="publish_btn_string">Publish</string>
+        <string name="action_refresh">refresh</string>
+        <string name="action_add">add</string>
+        <string name="action_log_out">Log out</string>
+        <string name="title_activity_news">news</string>
+
+
+
+</resources>

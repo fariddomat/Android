@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_headr_layout"
+        android:background="#f6f7f9"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:src="@drawable/ic_news_in"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_title_tv"
+            android:text="Title"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_date_tv"
+            android:text="Date"
+            android:layout_below="@id/news_title_tv"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:textColor="#173966"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_headr_layout"
+        android:text="Test, Test, Test, Test, Test, Test, Test,
+        Test, Test, Test, Test, Test, Test, Test, Test, Test,
+        Test, Test, Test, Test, Test, Test, Test, Test,
+        Test, Test, Test, Test, Test, Test, "
+        android:background="@android:color/white"
+        android:padding="13dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/news_body"/>
+</LinearLayout>
